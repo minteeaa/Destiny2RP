@@ -12,6 +12,8 @@ You'll need a few things:
 * [Windows Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
 * [You'll need Visual Studio too...](https://visualstudio.microsoft.com/downloads/) (it's mandatory for some files to be created, you need to install the C++ modules.)
 
+Many of the better-sqlite3 issues were resolved using [this VC++ installer](http://go.microsoft.com/fwlink/?LinkId=691126) if you have any issues.
+
 ## The program
 Now that you've gotten those, it's time to install the thing
 * Clone the repo to a place on your computer.
