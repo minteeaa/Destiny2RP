@@ -100,8 +100,10 @@ async function updatePresence (id, type) {
       filteredActivityType = await identifyHash(filteredActivity.activityTypeHash, 'ActivityType')
       if (filteredDestination.displayProperties.name === '') presence.activity = 'In Orbit'
       else {
-        if (filteredActivityType.displayProperties.description.length > 128) presence.altText = filteredActivityType.displayProperties.description.substring(0, 125) + '...'
-        else presence.altText = filteredActivityType.displayProperties.description
+        if (filteredActivityType.displayProperties.description != null) {
+          if (filteredActivityType.displayProperties.description.length > 128) presence.altText = filteredActivityType.displayProperties.description.substring(0, 125) + '...'
+          else presence.altText = filteredActivityType.displayProperties.description
+        }
         presence.activity = filteredActivityType.displayProperties.name
         presence.location = filteredDestination.displayProperties.name
       }
