@@ -1,0 +1,26 @@
+{
+  "name": "d2rp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zetari",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^5.4.0",
+    "discord-rpc": "^3.0.2",
+    "dotenv": "^8.0.0",
+    "file-system": "^2.2.2",
+    "got": "^9.6.0",
+    "js-yaml": "^3.13.1",
+    "node-stream-zip": "^1.8.0",
+    "path": "^0.12.7",
+    "prompts": "^2.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "underscore": "^1.9.1",
+    "url": "^0.11.0"
+  }
+}
